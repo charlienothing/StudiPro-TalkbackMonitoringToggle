@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassFactory>
+  <ScriptClass
+    classID="{71B0F7B5-17E4-4DDA-A2AE-116FEEE967CC}"
+    category="FrameworkService"
+    name="Talkback Record Guard"
+    sourceFile="main.js"
+    functionName="createInstance"/>
+</ClassFactory>
