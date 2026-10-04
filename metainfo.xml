@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInformation>
+  <Attribute id="Package:ID" value="charlie.talkback-record-guard"/>
+  <Attribute id="Package:Name" value="Talkback Record Guard"/>
+  <Attribute id="Package:Version" value="0.1.1"/>
+  <Attribute id="Package:Vendor" value="Custom"/>
+</MetaInformation>
