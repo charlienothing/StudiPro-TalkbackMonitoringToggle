@@ -1,0 +1,26 @@
+name: Build Studio Pro Package
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build .package archive
+        run: |
+          mkdir -p dist
+          zip -j dist/Talkback_Record_Guard.package main.js metainfo.xml classfactory.xml
+
+      - name: Upload package artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Talkback_Record_Guard
+          path: dist/Talkback_Record_Guard.package
+          if-no-files-found: error
